@@ -1,2 +1,2 @@
 # ACCESS-OOSS
-Android Application of ACCESS Organization Online Services System
+Mobile Application of ACCESS Organization Online Services System

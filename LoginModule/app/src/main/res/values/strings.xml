@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ACCESS OOSS</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_click_me">Don\'t have an account? Click me!</string>
+</resources>

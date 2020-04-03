@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('material-1.2.0-alpha04.aar'))

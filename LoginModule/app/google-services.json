@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620941779147",
+    "firebase_url": "https://accessooss-73cbb.firebaseio.com",
+    "project_id": "accessooss-73cbb",
+    "storage_bucket": "accessooss-73cbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620941779147:android:86ee966b30180819ddbb4e",
+        "android_client_info": {
+          "package_name": "com.example.loginmodule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620941779147-f2f6kbsris9mjqevrdudqt5ej40dd53i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginmodule",
+            "certificate_hash": "050ae5bcc6fc67c88db5f9c7b1e5971b243d2798"
+          }
+        },
+        {
+          "client_id": "620941779147-07jp5bd5t4rnkqmpnqebarml2kl12jsr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBdgo4rXRTCkOp24hlltaNM8UW54ml3Ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620941779147-07jp5bd5t4rnkqmpnqebarml2kl12jsr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

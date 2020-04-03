@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_animation"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/orders"
+        android:layout_width="164dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/loginbutton"
+        android:drawableTop="@drawable/ic_shopping_cart_black_24dp"
+        android:fontFamily="@font/ntr"
+        android:lineSpacingExtra="10dp"
+        android:text="Merchandise Items"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/members"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/members"
+        android:layout_width="164dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/loginbutton"
+        android:drawableTop="@drawable/ic_people_outline_black_24dp"
+        android:fontFamily="@font/ntr"
+        android:lineSpacingExtra="0sp"
+        android:text="Membership Registration"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/locker"
+        android:layout_width="164dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/loginbutton"
+        android:drawableTop="@drawable/ic_storage_black_24dp"
+        android:text="Locker Rental"
+        android:fontFamily="@font/ntr"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/members" />
+
+    <Button
+        android:id="@+id/calendar"
+        android:layout_width="164dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:drawableTop="@drawable/ic_event_note_black_24dp"
+        android:text="Calendar"
+        android:fontFamily="@font/ntr"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:background="@drawable/loginbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orders" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="413dp"
+        android:layout_height="109dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/design_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

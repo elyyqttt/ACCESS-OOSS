@@ -19,6 +19,20 @@ public class Members {
     public Members() {
     }
 
+    public Members (String snum, String fname, String mname, String lname, Integer year, Integer section, String email, Long mobilenum, String bday, String contactperson, Long contactnum, String address) {
+        this.snum = snum;
+        this.fname = fname;
+        this.mname = mname;
+        this.lname = lname;
+        this.year = year;
+        this.section = section;
+        this.email = email;
+        this.mobilenum = mobilenum;
+        this.bday = bday;
+        this.contactperson = contactperson;
+        this.contactnum = contactnum;
+        this.address = address;
+    }
     public Integer getYear() {
         return year;
     }

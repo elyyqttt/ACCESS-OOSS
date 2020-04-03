@@ -2,6 +2,7 @@ package com.example.loginmodule;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.renderscript.Sampler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -9,6 +10,7 @@ import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class CreateAccount extends AppCompatActivity {
 
@@ -16,7 +18,9 @@ public class CreateAccount extends AppCompatActivity {
     private EditText studentnum, firstname, year, section, middlename, lastname, email, mobilenum, bday, contactperson, contactnum, address;
     private Button signupbutt;
     private String status = "Pending";
-    private DatabaseReference dbr;
+
+    private DatabaseReference dbr = FirebaseDatabase.getInstance().getReference();
+    private ValueEventListener eventListener;
     Members member;
 
     @Override
@@ -24,6 +28,16 @@ public class CreateAccount extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
         register();
+    }
+
+    private void writeNewUser(String userID, String snum, String fname, String mname, String lname, Integer year,
+                              Integer section, String email, Long mobilenum, String bday, String contactperson,
+                              Long contactnum, String address ) {
+
+        dbr.child("users").child(userID).setValue(snum);
+
+
+
     }
 
     private void register() {
@@ -43,12 +57,12 @@ public class CreateAccount extends AppCompatActivity {
 
         member = new Members();
 
-        dbr = FirebaseDatabase.getInstance().getReference().child("access_members");
+        dbr = FirebaseDatabase.getInstance().getReference().child("access_members").child(studentnum.getText().toString().trim());
 
         signupbutt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dbr.child("access_members").child(studentnum.getText().toString().trim()).setValue(member);
+                //dbr.child("access_members").child(studentnum.getText().toString().trim()).setValue(member);
                 member.setMembership_status(status);
                 member.setFname(firstname.getText().toString().trim() + " " + middlename.getText().toString().trim() + " " + lastname.getText().toString().trim());
                 member.setYear(Integer.parseInt(year.getText().toString().trim()));
